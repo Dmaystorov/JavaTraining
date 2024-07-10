@@ -1,0 +1,40 @@
+/*
+Напишете програма, която задава въпрос на потребителя и предлага 4 възможни отговора:
+Какъв е правилният начин да създадем променлива в Java?
+A: int someRandomVariable = 5;
+B: char symbol = “$”;
+C: float pi = 3.14;
+D: int 1number = 5;
+Потребителят трябва да може да отговори като въведе символ, съответстващ на отговора.
+*/
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String a = "a: int someRandomVariable = 5;";
+        String b = "b: char symbol = “$”;";
+        String c = "c: float pi = 3.14;";
+        String d = "d: int 1number = 5;";
+        System.out.println("Какъв е правилният начин да създадем променлива в Java?");
+        System.out.println(a); System.out.println(b); System.out.println(c); System.out.println(d);
+    String answer = scanner.nextLine();
+    switch(answer){
+        case "a":
+            System.out.println(a);
+            break;
+        case "b":
+            System.out.println(b);
+            break;
+        case "c":
+            System.out.println(c);
+            break;
+        case "d":
+            System.out.println(d);
+            break;
+        default:
+            System.out.println("Невалиден отговор");
+            break;
+    }
+    }
+}
